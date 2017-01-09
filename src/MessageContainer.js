@@ -151,6 +151,9 @@ export default class MessageContainer extends React.Component {
           renderHeader={this.renderFooter}
           renderFooter={this.renderLoadEarlier}
           renderScrollComponent={this.renderScrollComponent}
+
+          onEndReached={this.props.onEndReached}
+          onEndReachedThreshold={this.props.onEndReachedThreshold}
         />
       </View>
     );
